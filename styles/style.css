@@ -1,0 +1,181 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+header {
+  background-color: #fff;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  position: fixed;
+}
+
+header img, .logo {
+  width: 50px;
+  position: sticky;
+  top: 0;
+  right: 50px;
+}
+
+.button-name {
+  align-items: center;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: rgb(246, 66, 66);
+  border-radius: 4px;
+  border-width: 0;
+  box-shadow: rgba(45, 35, 66, 0.2) 0 2px 4px, rgba(45, 35, 66, 0.15) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono", monospace;
+  height: 30px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  top: 10px;
+  right: -100px;
+  text-align: left;
+  text-decoration: none;
+  transition-box-shadow: 0.15s, transform 0.15s;
+  -moz-user-select: none;
+       user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow, transform;
+  font-size: 18px;
+}
+.button-name:focus {
+  box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+}
+.button-name:hover {
+  box-shadow: rgba(45, 35, 66, 0.3) 0 4px 8px, rgba(45, 35, 66, 0.2) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+.button-name:active {
+  box-shadow: #D6D6E7 0 3px 7px inset;
+  transform: translateY(2px);
+}
+
+.image-container {
+  background-image: url(/assets/assets/pexels-narda-yescas-1566837.jpg);
+  width: 100%;
+  height: 60vh;
+  background-position: center;
+  background-size: cover;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 50vh; /* This will center the content vertically on the viewport */
+}
+
+.text-content {
+  max-width: 900px; /* Adjust this value to control the maximum width of your content */
+  padding: 20px;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card-item {
+  width: 200px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  padding: 10px;
+  background-color: #fff;
+}
+
+.card-item img {
+  max-width: 100%;
+  height: 200px;
+}
+
+.card-item h3 {
+  margin: 10px 0;
+}
+
+.second-section {
+  background: rgb(224, 86, 86);
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.second-section a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 50px;
+  border: 5px solid;
+  padding: 10px;
+}
+
+footer {
+  background: rgb(79, 79, 79);
+  height: 20vh;
+}
+
+footer, .container-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+/* Media query for tablets */
+@media (max-width: 768px) {
+  main {
+    height: auto; /* Remove height to allow content to expand vertically */
+  }
+}
+/* Media query for mobile phones */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.5rem; /* Adjust font size for smaller screens */
+  }
+  p {
+    font-size: 1rem; /* Adjust font size for smaller screens */
+  }
+  header {
+    width: 100%;
+  }
+  button, .button-name {
+    background-color: aqua;
+    margin-right: 100px;
+  }
+  .second-section a {
+    font-size: 2rem;
+  }
+}/*# sourceMappingURL=style.css.map */
